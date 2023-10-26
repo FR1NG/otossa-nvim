@@ -7,7 +7,3 @@ vim.keymap.set('n', '<S-l>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<C-h>', '<C-W>h')
 vim.keymap.set('n', '<C-l>', '<C-W>l')
 vim.keymap.set('i', 'jj', '<Esc>')
-
--- nvim tree mappings
-local api = require('nvim-tree.api')
-vim.keymap.set('n', 'l',   api.node.open.edit)

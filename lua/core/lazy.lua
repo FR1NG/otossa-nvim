@@ -28,6 +28,7 @@ local plugins = {
 	    "williamboman/mason-lspconfig.nvim",
 	    "neovim/nvim-lspconfig",
 	},
+	{'fedepujol/move.nvim'},
 	{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
 }
 
