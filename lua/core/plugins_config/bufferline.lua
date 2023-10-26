@@ -15,6 +15,14 @@ options = {
 	bufferline.style_preset.no_italic,
 	bufferline.style_preset.no_bold
     },
+    offsets = {
+            {
+                filetype = "NvimTree",
+                text="Nvim Tree",
+                separator= true,
+                text_align = "left"
+            }
+	},
     buffer_close_icon = '󰅖',
     modified_icon = '●',
     close_icon = '',
