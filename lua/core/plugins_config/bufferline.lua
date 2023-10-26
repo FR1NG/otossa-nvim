@@ -11,6 +11,10 @@ options = {
 	icon = '▎', -- this should be omitted if indicator style is not 'icon'
 	style = 'icon',
     },
+    style_preset = {
+	bufferline.style_preset.no_italic,
+	bufferline.style_preset.no_bold
+    },
     buffer_close_icon = '󰅖',
     modified_icon = '●',
     close_icon = '',
