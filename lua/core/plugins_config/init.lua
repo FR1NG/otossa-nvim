@@ -1,8 +1,0 @@
-require("core.plugins_config.nvim-tree")
-require("core.plugins_config.lualine")
-require("core.plugins_config.telescope")
-require("core.plugins_config.lsp")
-require("core.plugins_config.nvim-web-devicons")
-require("core.plugins_config.bufferline")
-require("core.plugins_config.nvim-move")
-require("core.plugins_config.nvim-comment")

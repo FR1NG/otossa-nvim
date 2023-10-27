@@ -10,28 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
--- Example using a list of specs with the default options
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
-local plugins = {
-	{ "nvim-tree/nvim-tree.lua" },
-	{ "nvim-tree/nvim-web-devicons" },
-	{ "nvim-treesitter/nvim-treesitter" },
-	{
-	    'nvim-telescope/telescope.nvim', tag = '0.1.4',
-	      dependencies = { 'nvim-lua/plenary.nvim' }
-    	},
-	{ "nvim-lualine/lualine.nvim" },
-	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
-	{
-	    "williamboman/mason.nvim",
-	    "williamboman/mason-lspconfig.nvim",
-	    "neovim/nvim-lspconfig",
-	},
-	{'fedepujol/move.nvim'},
-	{'numToStr/Comment.nvim'},
-	{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+vim.g.mapleader = " "
 
-}
-
-require("lazy").setup(plugins)
+require("lazy").setup("core.plugins")
