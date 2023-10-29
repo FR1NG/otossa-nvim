@@ -9,7 +9,8 @@ local M = {
 			"williamboman/mason-lspconfig.nvim",
 			config = function()
 				require("mason-lspconfig").setup {
-					ensure_installed = { "lua_ls", "tsserver", "eslint" },
+					ensure_installed = { "lua_ls", "tsserver", "clangd" },
+					automatic_installation = true,
 				}
 			end
 		},
