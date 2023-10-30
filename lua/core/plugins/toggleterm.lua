@@ -15,7 +15,7 @@ M.config = function ()
 	  --     return vim.o.columns * 0.4
 	  --   end
 	  -- end,
-	  open_mapping = [[<c-\>]],
+	  open_mapping = [[<c-space>]],
 	  -- on_create = fun(t: Terminal), -- function to run when the terminal is first created
 	  -- on_open = fun(t: Terminal), -- function to run when the terminal opens
 	  -- on_close = fun(t: Terminal), -- function to run when the terminal closes
@@ -47,7 +47,7 @@ M.config = function ()
 	  persist_size = true,
 	  persist_mode = true, -- if set to true (default) the previous terminal mode will be remembered
 	  -- direction = 'vertical' | 'horizontal' | 'tab' | 'float',
-	  direction = 'horizontal' ,
+	  direction = 'float' ,
 	  close_on_exit = true, -- close the terminal window when the process exits
 	   -- Change the default shell. Can be a string or a function returning a string
 	  shell = vim.o.shell,

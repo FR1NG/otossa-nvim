@@ -9,7 +9,7 @@ local M = {
 			"williamboman/mason-lspconfig.nvim",
 			config = function()
 				require("mason-lspconfig").setup {
-					ensure_installed = { "lua_ls", "tsserver", "clangd" },
+					ensure_installed = { "lua_ls", "tsserver", "clangd", "volar" },
 					automatic_installation = true,
 				}
 			end

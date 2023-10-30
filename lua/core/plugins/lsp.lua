@@ -75,6 +75,15 @@ M.config = function()
 		capabilities = capabilities,
 	})
 
+	-- configure php server with plugin
+	lspconfig["intelephense"].setup({
+		capabilities = capabilities,
+	})
+
+	-- configure vuejs server with plugin
+	lspconfig["volar"].setup({
+		capabilities = capabilities,
+	})
 	-- configure css server
 	lspconfig["cssls"].setup({
 		capabilities = capabilities,
